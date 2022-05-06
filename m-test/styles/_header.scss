@@ -64,14 +64,16 @@ header {
                 }
 
                 &_opened {
+                    padding: 20px 40px;
                     background: #272727;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
 
                     position: absolute;
-                    top: 75px;
-                    left: 0;
+                    top: 55px;
+                    left: -20px;
+                    z-index: 100;
                 }
 
                 .nav__link {
