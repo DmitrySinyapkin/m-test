@@ -1,7 +1,7 @@
 const title = document.querySelector('.text__title')
 const subtitle = document.querySelector('.text__subtitle')
 const slides = document.querySelectorAll('.slider__slide')
-const controls = document.querySelector('.face__controls')
+const controls = document.querySelectorAll('.controls__switch')
 
 const sliderData = [
     {
@@ -29,9 +29,9 @@ function changeSlide(index) {
 }
 
 function handleClick(e) {
-    const index = e.target.closest('div').dataset.slide
+    const index = e.target.dataset.slide
     changeSlide(index)
-    controls.children.forEach(item => item.dataset.slide == index ? item.classList.add('controls__switch_active') : item.classList.remove('controls__switch_active'))
+    controls.forEach(item => item.dataset.slide == index ? item.classList.add('controls__switch_active') : item.classList.remove('controls__switch_active'))
 }
 
 function handleFirstLoad() {
@@ -39,6 +39,6 @@ function handleFirstLoad() {
     subtitle.innerHTML = sliderData[0].subtitle
 }
 
-controls.addEventListener('click', handleClick)
+controls.forEach(btn => btn.addEventListener('click', handleClick))
 
 window.addEventListener('load', handleFirstLoad)
