@@ -20,7 +20,7 @@ const makeCard = (postData) => {
     const picture = document.createElement('figure')
     picture.classList.add('card__picture')
     const img = document.createElement('img')
-    img.src = IMG_URL
+    img.src = IMG_URL + `?random=${postData.id}`
     picture.append(img)
     card.append(picture)
 
