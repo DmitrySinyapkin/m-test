@@ -1,0 +1,17 @@
+.cards {
+    padding: 30px;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    &__controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+}
