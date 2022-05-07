@@ -7,11 +7,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    @media (min-width: 1200px) and (max-width: 1399px) {
-        padding: 0 10px;
-    }
-
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1399px) {
         padding: 0 30px;
     }
 
@@ -20,11 +16,7 @@ header {
         align-items: center;
         gap: 1.5vw;
 
-        @media (min-width: 1200px) and (max-width: 1399px) {
-            gap: 1vw;
-        }
-
-        @media (min-width: 768px) and (max-width: 1199px) {
+        @media (min-width: 768px) and (max-width: 1399px) {
             gap: 10vw;
             flex-direction: row-reverse;
         }
@@ -44,7 +36,7 @@ header {
             .nav__button {
                 display: none;
 
-                @media (max-width: 1199px) {
+                @media (max-width: 1399px) {
                     display: block;
                     cursor: pointer;
                 }
@@ -55,11 +47,7 @@ header {
                 align-items: center;
                 gap: 1vw;
 
-                @media (min-width: 1200px) and (max-width: 1399px) {
-                    gap: 0.5vw;
-                }
-
-                @media (max-width: 1199px) {
+                @media (max-width: 1399px) {
                     display: none;
                 }
 
