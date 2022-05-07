@@ -1,0 +1,45 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 200;
+    top: 0;
+    left: 0;
+    display: none;
+
+    &_opened {
+        display: flex;
+        padding-top: 115px;
+    }
+
+    .modal__window {
+        z-index: 300;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        transform: skew(-10deg);
+
+        .window__moon {
+            width: 50%;
+            height: 100%;
+            background: center / contain no-repeat url('../images/moon.jpg');
+
+            @media (max-width: 1399px) {
+                display: none;
+            }
+        }
+
+        .window__request {
+            width: 50%;
+            height: 100%;
+            background: #131313;
+
+            .request {
+                transform: skew(10deg);
+            }
+        }
+    }
+}
