@@ -38,6 +38,10 @@
     width: 100%;
     @include slide-height();
 
+    &__header {
+        display: none;
+    }
+
     &__wrapper {
         width: 100%;
 
