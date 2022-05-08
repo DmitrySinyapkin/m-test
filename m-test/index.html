@@ -98,11 +98,23 @@
                             </div>
                             <button class="request__button_exit button button_phone"><div class="button__text">X</div></button>
                         </div>
-                        <form class="request__form form">
-                            <input class="form__input form__input_name" type="text" placeholder="ВАШЕ ИМЯ*">
-                            <input class="form__input form__input_email" type="text" placeholder="E-MAIL*">
-                            <input class="form__input form__input_phone" type="text" placeholder="+7(000)000-00-00">
-                            <textarea class="form__input form__input_question" placeholder="ВАШ ВОПРОС*"></textarea>
+                        <form class="request__form">
+                            <div class="form__field">
+                                <input class="form__input form__input_name" type="text" placeholder="ВАШЕ ИМЯ*">
+                                <div class="field__message field__message_name"></div>
+                            </div>
+                            <div class="form__field">
+                                <input class="form__input form__input_email" type="text" placeholder="E-MAIL*">
+                                <div class="field__message field__message_email"></div>
+                            </div>
+                            <div class="form__field">
+                                <input class="form__input form__input_phone" type="text" placeholder="+7(000)000-00-00">
+                                <div class="field__message field__message_phone"></div>
+                            </div>
+                            <div class="form__field">
+                                <textarea class="form__input form__input_question" placeholder="ВАШ ВОПРОС*"></textarea>
+                                <div class="field__message field__message_question"></div>
+                            </div>
                         </form>
                         <div class="request__controls">
                             <div class="button_full request__button_submit">
