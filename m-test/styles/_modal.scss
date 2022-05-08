@@ -170,6 +170,7 @@
 
                         .form__input_question {
                             height: 150px;
+                            resize: none;
 
                             @media (max-width: 767px) {
                                 height: 70px;
