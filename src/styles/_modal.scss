@@ -1,6 +1,6 @@
 @mixin form-paddding-mobile {
     @media (max-width: 767px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -29,12 +29,10 @@
         justify-content: center;
         transform: skew(-10deg);
 
-        @media (min-width: 768px) and (max-width: 1399px) {
-            width: 90%;
-        }
-
-        @media (max-width: 767px) {
-            width: 100%;
+        @media (max-width: 1599px) {
+            width: 100vw;
+            height: 100vh;
+            transform: skew(0deg);
         }
 
         .window__moon {
@@ -45,7 +43,7 @@
             background: #010101;
 
 
-            @media (max-width: 1399px) {
+            @media (max-width: 1599px) {
                 display: none;
             }
 
@@ -62,12 +60,8 @@
             height: 100%;
             background: #131313;
 
-            @media (min-width: 768px) and (max-width: 1399px) {
-                width: 90%;
-            }
-
-            @media (max-width: 767px) {
-                width: 75%;
+            @media (max-width: 1599px) {
+                width: 100%;
             }
 
             .request {
@@ -78,8 +72,9 @@
                 display: flex;
                 flex-direction: column;
 
-                @media (max-width: 767px) {
-                    width: 90%;
+                @media (max-width: 1599px) {
+                    width: 100%;
+                    transform: skew(0deg);
                 }
 
                 &__text_small {
@@ -108,11 +103,16 @@
                     display: flex;
                     justify-content: space-between;
 
+                    @media (max-width: 1599px) {
+                        width: 80%;
+                    }
+    
+
                     &_left {
                         max-width: 440px;
 
                         @media (max-width: 767px) {
-                            padding-left: 30px;
+                            max-width: 310px;
                             font-size: 35px;
                         }
                     }
@@ -185,19 +185,25 @@
                     gap: 40px;
 
                     @media (min-width: 768px) and (max-width: 1399px) {
-                        gap: 20px;
+                        width: 80%;
                     }
 
                     @media (max-width: 767px) {
+                        width: 80%;
                         flex-direction: column;
+                        align-items: center;
                         gap: 20px;
+                    }
+
+                    .request__button_submit {
+                        min-width: 195px;
                     }
 
                     .request__agreement {
                         max-width: 300px;
 
                         @media (max-width: 1399px) {
-                            max-width: 250px;
+                            max-width: 80%;
                         }
                     }
                 }
