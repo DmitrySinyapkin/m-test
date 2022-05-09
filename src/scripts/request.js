@@ -66,7 +66,7 @@ const validateEmail = () => {
 const validateQuestion = () => {
     const question = questionField.value
     if (!question) {
-        questionMessage.innerHTML = 'Пожалуйста, введите свое вопрос!'
+        questionMessage.innerHTML = 'Пожалуйста, введите свой вопрос!'
         return false
     } else {
         return true
